@@ -1,0 +1,180 @@
+/* #c19f5f; */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+ul,li{
+   list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+
+
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+.main{
+    display: flex;
+}
+.content{
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    width: 30%;
+    text-align: center;
+}
+.logo img{
+    width: 80%;
+}
+.nav-item{
+    width: 70%;
+}
+.nav-item ul{
+    text-align: right;
+    margin-right: 60px;
+    margin-top: 20px;
+
+}
+.nav-item ul li {
+    display: inline-block;
+}
+.nav-item ul li a{
+    font-size: 20px;
+    margin-right: 20px;
+}
+#banner{
+    background: url(image/cake-1.jpg) no-repeat center;
+    background-size: cover;
+   
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+ 
+}
+.text{
+    text-align: center;
+    padding: 200px;
+}
+h1{
+    font-size: 60px;
+    color: #f1f1f1;
+}
+.head{
+    position: relative;
+}
+.rectangle{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    height: 200px;
+    width: 200px;
+    border: 2px solid goldenrod;
+    transform: rotate(-45deg);
+    animation: circle 4s linear infinite;
+}
+@keyframes circle{
+    from{
+        transform: rotate(-45deg);
+    }
+    to{
+        transform: rotate(45deg);
+    }
+}
+#product{
+    padding: 50px 50px;
+    box-sizing: border-box;
+     background: #000;
+}
+.title{
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 40px;
+    padding:30px 0 40px ;
+}
+.product-item{
+    width: 30%;
+    position: relative;
+    transition:  .4s;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.product-image{
+    transition: transform 2s ;
+}
+.product-image img {
+    width: 100%;
+}
+.product-name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(165, 165, 165, 0.452);
+    display: none;
+    transition: display 2s ;
+    
+}
+h3{
+    font-size: 50px;
+    margin-top: 240px;
+    margin-left: 120px;
+    color: #3f2c1e;
+}
+.product-item:hover .product-image{
+    transform: scale(1.3);
+}
+
+.product-item:hover .product-name{
+    display: block;
+}
+#cupcake{
+    background: #000;
+}
+.cupcake-item{
+    width: 30%;
+    padding: 10px 10px 40px 60px; 
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+   
+}
+
+.cupcake-background{
+    transform: rotate(-45deg);
+     animation: circle 4s linear infinite;
+
+}
+.cupcake-img{
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+.cupcake-details{
+     text-align: center;
+    color: #f1f1f1;
+    margin-top: 100px;
+}
+img{
+    width:80%;
+}
+footer{
+    background: #000;
+}
+footer p{
+    text-align: center;
+    padding: 30px 30px;
+    color: gold;
+}
